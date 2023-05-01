@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var car_user_1 = require("./mock/entities/car-user");
+var car_repository_user_1 = require("./mock/repository/car-repository-user");
+var car1 = new car_user_1.Car("BMW", 250, "BMW-X", "300.000$");
+var car2 = new car_user_1.Car("Kia", 150, " CARNIVAL", "100.000$");
+var car3 = new car_user_1.Car("Merc", 270, "C-CLASS", "280.000$");
+var carRepo = new car_repository_user_1.CarRepository();
+carRepo.create(car1);
+carRepo.create(car2);
+carRepo.create(car3);
+console.log(carRepo);

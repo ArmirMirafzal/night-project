@@ -1,0 +1,1 @@
+export type CAR_TYPE = "BMW-X" | "BMW-I" | "C-CLASS" | " CLA-ClASS" | " CARNIVAL" | "SELTOS" ;
