@@ -4,13 +4,13 @@ export class CarRepository {
   private list: Car[] = [];
   private counter: number = 0;
 
-  create(...cards: Car[]) {
-    for (const card of cards) {
-      if (this.isExist(card.name)) {
-        throw new Error(`car(${card.name}) already exists`);
+  create(...cars: Car[]) {
+    for (const car of cars) {
+      if (this.isExist(car.name)) {
+        throw new Error(`car(${car.name}) already exists`);
       }
-      card.setId(++this.counter);
-      this.list.push(card);
+      car.setId(++this.counter);
+      this.list.push(car);
     }
   }
 
@@ -22,9 +22,7 @@ export class CarRepository {
     return false;
   }
 
-  getList(){
-	return this.list;
+  getList() {
+    return this.list;
   }
 }
-
-

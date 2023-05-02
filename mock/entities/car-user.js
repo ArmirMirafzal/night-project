@@ -17,11 +17,11 @@ var Car = /** @class */ (function () {
     return Car;
 }());
 exports.Car = Car;
-//   setModel(newModel: string) {
-//     if(this.name == "BMW"){
-//         this.model == BMW
-//     }
+// setModel(newModel: string) {
+//   if(this.name == "BMW"){
+//       this.model == BMW
 //   }
-//   getModel() {
-//     return this.model;
-//   }
+// }
+// getModel() {
+//   return this.model;
+// }
